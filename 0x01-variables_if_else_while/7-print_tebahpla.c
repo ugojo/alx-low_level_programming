@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - A program that prints lowercase alphabet
- * i reverse oder
- * Result: 0 (success)
+ * main - A program that prints
+ * alphebelts in revers mode
+ * Return: 0 (success)
  */
 
 int main(void)
@@ -11,7 +11,7 @@ int main(void)
 
 	c = 'z';
 
-	while (c <= 'a')
+	while (c >= 'a')
 	{
 		putchar(c);
 		c--;
