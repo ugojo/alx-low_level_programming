@@ -12,7 +12,7 @@ int main(void)
 
 	c = 0;
 	d = 'a';
-	
+
 	while (c < 10)
 	{
 		putchar(c + '0');
@@ -20,7 +20,7 @@ int main(void)
 	}
 	while (d <= 'f')
 	{
-		putchr(d)
+		putchar(d);
 		d++;
 	}
 	putchar('\n');
