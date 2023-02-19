@@ -8,19 +8,24 @@
 int main(void)
 {
 	int n;
+	int m;
 
-	for (n = 1; n < 90; n++)
+	for (n = 48; n <= 56; n++)
 	{
-		if ((n % 10) != 0)
+		for (m = 49; m <= 57; m++)
 		{
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
 
-		putchar((n / 10) + '0');
-		putchar((n % 10) + '0');
-		putchar(',');
-		putchar(' ');
-
+				if (n != 56 && m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-
 	}
 	putchar('\n');
 	return (0);
