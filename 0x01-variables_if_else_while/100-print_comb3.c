@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (m = 49; m <= 57; m++)
 		{
-			if (n != m)
+			if (m > n)
 			{
 				putchar(n);
 				putchar(m);
