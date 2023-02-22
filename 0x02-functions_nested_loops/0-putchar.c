@@ -3,7 +3,8 @@
 /**
  * _putchar - A program that prints _putchar,
  * followed by a new line
- * Return: 1 (success)
+ * Return: 1 (success).
+ * on error, -1 is returned, and erron is set approximately.
  */
 
 int _putchar(char c)
