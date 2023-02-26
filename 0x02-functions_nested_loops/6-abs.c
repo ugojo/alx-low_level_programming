@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * _abs - A function that computes
+ * abs - A function that computes
  * the absolute value of an integer.
  * @c: the int to be checked
  * Return: Absoulate value of numbeer or zero
