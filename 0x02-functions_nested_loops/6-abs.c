@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * abs - A function that computes
  * the absolute value of an integer.
  * @c: the int to be checked
