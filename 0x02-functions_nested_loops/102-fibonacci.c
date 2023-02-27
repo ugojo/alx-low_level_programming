@@ -23,7 +23,7 @@ int main(void)
 		{
 			printf("\n");
 		}
-		else 
+		else
 		{
 			printf(", ");
 		}
