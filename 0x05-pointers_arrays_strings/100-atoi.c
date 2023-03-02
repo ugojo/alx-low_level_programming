@@ -19,14 +19,6 @@ int _atoi(char *s)
    i = 0;
    sum = 0;
 
-//    for (i = strlen(s) - 1; i >= 0; i--)
-//    {
-//     if (s[i] >= 48 && s[i] <= 57)
-//      {
-//         sum = sum * 10 + (s[i] - 48);
-//      }
-//    }
-
 
    while (s[i] != '\0')
    {
