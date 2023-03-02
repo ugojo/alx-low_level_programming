@@ -14,7 +14,7 @@ int _atoi(char *s)
     int x = atoi(s);
    return (x); 8*/
 
-   int i, sum, b, a;
+   int i, sum;
 
    i = 0;
    sum = 0;
