@@ -21,7 +21,6 @@ char *cap_string(char *str)
 			}
 		}
 		else if (str[i - 1] == ' '
-				|| str[i - 1] == ""
 				|| str[i - 1] == ','
 				|| str[i - 1] == '-'
 				|| str[i - 1] == '\t'
