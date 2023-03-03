@@ -11,12 +11,37 @@
 char *cap_string(char *str)
 {
 	int i;
-	int length = strlen(str);
+	
 
-	for (i = 0; i < length; i++)
+	for (i = 0; str[i]; ++i)
 	{
-		str[i] = toupper(str[i]);
-	}
+		if (i == 0)
+		{
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - 32;
+			}
+		}
+		else if (str[i - 1] == ' '
+				|| str[i - 1] == ','
+				|| str[i - 1] == '-'
+				|| str[i - 1] == '\t'
+				|| str[i - 1] == '\n'
+				|| str[i - 1] == '.'
+				|| str[i - 1] == '-'
+				|| str[i - 1] == '?'
+				|| str[i - 1] == '!'
+				|| str[i - 1] == '('
+				|| str[i - 1] == ')'
+				|| str[i - 1] == '{'
+				|| str[i - 1] == '}')
+		{
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - 32;
 
-	return str;
+			}
+		}
+	}
+	return (str);
 }
