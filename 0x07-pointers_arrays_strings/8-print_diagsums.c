@@ -8,8 +8,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, sum, *ptr;
-	sum = 0;
+	int i, j;
 
 	for (i =  0; i < size; i++)
 	{
@@ -17,8 +16,7 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				*ptr = a[i][j];
-				sum = sum + ptr;
+				printf("%d, %d\n", a[i][j]);
 			}
 		}
 
