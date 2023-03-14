@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	len1 = strlen(s1);
 	len2 = strlen(s2);
 
-	conct = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
+	conct = (char *)malloc(sizeof(char) * (len1 + len2 + ));
 
 			if (conct == NULL)
 			{
@@ -47,6 +47,7 @@ char *str_concat(char *s1, char *s2)
 			{
 				*cont_val = *s2;
 				cont_val++;
+				s1++;
 				s2++;
 			}
 
