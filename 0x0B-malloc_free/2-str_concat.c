@@ -12,7 +12,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, len1, len2;
+	int len1, len2;
 	char *conct;
 	char *cont_val;
 
@@ -35,7 +35,6 @@ char *str_concat(char *s1, char *s2)
 			return ((char *)NULL);
 			}
 
-			i = j = 0;
 
 			cont_val = conct;
 			while (*s1)
@@ -51,6 +50,6 @@ char *str_concat(char *s1, char *s2)
 				s2++;
 			}
 
-			cont_val[i] = '\0';
+			cont_val = '\0';
 			return (conct);
 }
