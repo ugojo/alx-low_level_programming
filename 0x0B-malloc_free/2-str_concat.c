@@ -37,21 +37,19 @@ char *str_concat(char *s1, char *s2)
 
 			i = j = 0;
 
-			cont_val = cont;
+			cont_val = conct;
 			while (*s1)
 			{
-			*cont_val[i] = *s1[i];
-			i++;
+				cont_val[i] = s1[i];
+				i++;
 			}
 			while (*s2)
 			{
-			*cont_val[i] = *s2[j];
-			i++;
-			j++;
+				cont_val[i] = *s2[j];
+				i++;
+				j++;
 			}
 
 			cont_val[i] = '\0';
-
 			return (conct);
 }
-
