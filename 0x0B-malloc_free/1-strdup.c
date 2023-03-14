@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  * _strdup - duplicate to new memory space location
@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	static char *str_val;
 	char *dup_str;
 
-	len = strlen(*str);
+	len = strlen(str);
 
 	str_val = (char *)malloc(sizeof(char) * len + 1);
 
