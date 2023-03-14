@@ -50,6 +50,6 @@ char *str_concat(char *s1, char *s2)
 				s2++;
 			}
 
-			cont_val = '\0';
+			*cont_val = '\0';
 			return (conct);
 }
