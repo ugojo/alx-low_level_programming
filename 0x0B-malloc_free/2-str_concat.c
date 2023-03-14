@@ -40,14 +40,15 @@ char *str_concat(char *s1, char *s2)
 			cont_val = conct;
 			while (*s1)
 			{
-				cont_val[i] = s1[i];
-				i++;
+				*cont_val = *s1;
+				cont_val++;
+				s1++;
 			}
 			while (*s2)
 			{
-				cont_val[i] = s2[j];
-				i++;
-				j++;
+				*cont_val = *s2;
+				cont_val++;
+				s2++;
 			}
 
 			cont_val[i] = '\0';
