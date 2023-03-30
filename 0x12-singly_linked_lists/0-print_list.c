@@ -9,21 +9,17 @@
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int count;
+	size_t count = 0;
 
-	if (h == NULL)
-		return (0);
-
-	list_t *prt = NULL;
-
-	prt = h;
-
-	while (prt != NULL)
-		if (h->str == NULL)
+	while (h)
+	{
+		if (!h->str)
 			printf("[0] (nil)\n");
-	printf("[%u] %s\n", h->len, h->str);
-	prt = prt->next;
+		else
+			printf("[%u] %s\n", h->len, h->str);
+	h = h->next;
 	count++;
+	}
 
 	return (count);
 }
