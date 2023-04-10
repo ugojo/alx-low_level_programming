@@ -11,13 +11,13 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int i, c = 0;
-	unsigned int c;
+	unsigned int num;
 	unsigned long int exclusive = n ^ m;
 
 	for (i = 63; i >= 0; i--)
 	{
-		current = exclusive >> i;
-		if (current & 1)
+		num = exclusive >> i;
+		if (num & 1)
 		{
 			c++;
 		}
